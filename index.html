@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="card weather-card">
+    <img class="card-img-top" src="<%= weatherImageSource %>" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Today's Weather</h5>
+      <h1 class="card-text"><%= Temperature %></h1>
+      <a class="btn btn-primary">Try Another City</a>
+    </div>
+  </div>
+  <form class="" action="/" method="post">
+
+    <label for="cityInput">City Name: </label>
+    <input id="cityInput" type="text" name="cityName">
+    <button type="submit" name="submit">Go</button>
+
+  </form>
+</body>
+
+</html>

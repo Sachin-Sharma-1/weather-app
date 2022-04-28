@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+<section class="scene">
+  <div class="sun"></div>
+  <div class="weather-card">
+    <form action="/"  method = "post">
+      <div class="form-group">
+        <h4>Enter City Name</h4>
+        <input style="margin-bottom : 5%;"type="text" name = "cityName"class="form-control" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary">Go</button>
+    </form>
+  </div>
+
+  <div class="bg">
+    <img src="/police_car.gif" class="car1">
+    <img src="/police_car.gif" class="car2">
+  </div>
+
+</section>
+  <script src="index.js" charset="utf-8"></script>
+
+<%- include("partials/footer") -%>

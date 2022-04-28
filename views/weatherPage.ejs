@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+
+  <section class="scene">
+    <div class="sun"></div>
+    <div class="temp-card">
+      <img class="image" src="<%= imageSource %>" alt="Card image cap">
+      <div class="card-body">
+        <h5>Today's Weather</h5>
+        <h1><%= temp %></h1>
+        <p><%= weatherDescription %></p>
+        <form action="/weather" method="post">
+          <button class = "btn btn-primary" type="submit" name="button">Try Another City</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="bg">
+      <img src="/police_car.gif" class="car1">
+      <img src="/police_car.gif" class="car2">
+    </div>
+
+  </section>
+    <script src="weather.js" charset="utf-8"></script>
+  <%- include("partials/footer") -%>
